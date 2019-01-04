@@ -1,0 +1,2 @@
+For Open Cart version 1.5.6
+Please see the Readme.pdf file inside "help" directory.

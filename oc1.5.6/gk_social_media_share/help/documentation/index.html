@@ -1,0 +1,303 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Social Media Share - User Manual</title>
+	
+	<meta name="description" content="Ever wanted to share your products on your social media pages as soon as you add or edit them? Well, that's exactly what this module does. Whenever a product is added or edited on the admin side, it is posted to your social media page. Only Facebook share is available at this version.">
+	<meta name="author" content="GoodKoding">
+	<meta name="copyright" content="GoodKoding">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-05-05T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#A8A7A7;color:#363636;}
+		::-moz-selection{background:#474747;color:#E8175D;}
+		::selection{background:#474747;color:#E8175D;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_9.png);}
+		a{color:#E8175D;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #FF5E9F, #E8175D);
+			  background-image: -ms-linear-gradient(top, #FF5E9F, #E8175D);
+			  background-image: -webkit-gradient(linear, 0 0, 0 FF5E9F%, from(#616161), to(#E8175D));
+			  background-image: -webkit-linear-gradient(top, #FF5E9F, #E8175D);
+			  background-image: -o-linear-gradient(top, #FF5E9F, #E8175D);
+			  background-image: linear-gradient(top, #FF5E9F, #E8175D);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5E9F', endColorstr='#E8175D', GradientType=0);
+			  border-color: #E8175D #E8175D #bfbfbf;
+			  color:#363636;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #FF5E9F #FF5E9F #bfbfbf;
+		  background-color: #E8175D;
+		}
+		hr{border-top:1px solid #858484;border-bottom:1px solid #CFCDCD;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#616161;color:#A8A7A7;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #575757;-moz-text-shadow:1px 1px 0px #575757;text-shadow:1px 1px 0px #575757;}
+		#documenter_sidebar ul{border-top:1px solid #242424;}
+		#documenter_sidebar ul a{border-top:1px solid #575757;border-bottom:1px solid #242424;color:#A8A7A7;}
+		#documenter_sidebar ul a:hover{background:#474747;color:#E8175D;border-top:1px solid #474747;}
+		#documenter_sidebar ul a.current{background:#474747;color:#E8175D;border-top:1px solid #474747;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-social-media-share">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#advanced_installation" title="Advanced Installation">Advanced Installation</a></li>
+			<li><a href="#setting_up_options" title="Setting up Options">Setting up Options</a></li>
+			<li><a href="#stop_sharing" title="Stop Sharing">Stop Sharing</a></li>
+			<li><a href="#uninstall" title="Uninstall">Uninstall</a></li>
+			<li><a href="#faq" title="FAQ">FAQ</a>
+				<ul>
+					<li><a href="#faq_why_doesn_rsquot_my_product_show_up_on_facebook">Why doesn&rsquo;t my product show up on Facebook?</a>
+					<li><a href="#faq_why_do_i_have_to_place_files_inside_system_directory">Why do I have to place files inside system directory?</a>
+					<li><a href="#faq_why_do_i_have_to_place_a_new_php_file_at_the_root_directory">Why do I have to place a new PHP file at the root directory?</a>
+					<li><a href="#faq_does_this_module_save_my_facebook_credentials">Does this module save my Facebook credentials?</a>
+				</ul>
+			</li>
+			<li><a href="#support" title="Support">Support</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright GoodKoding 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Social Media Share</h1>
+	<h2>User Manual</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 04/30/2014</li>
+	<li>latest update: 05/05/2014</li>
+	<li>by: GoodKoding</li>
+	<li><a href="http://goodkoding.com/" target_blank>goodkoding.com</a></li>
+	<li>email: <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#103;&#111;&#111;&#100;&#107;&#111;&#100;&#105;&#110;&#103;&#46;&#99;&#111;&#109;">&#105;&#110;&#102;&#111;&#64;&#103;&#111;&#111;&#100;&#107;&#111;&#100;&#105;&#110;&#103;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Thank you for purchasing the module. For any issue related to the module please post a comment on the module’s comment section or send email to &#105;&#110;&#102;&#111;&#64;&#103;&#111;&#111;&#100;&#107;&#111;&#100;&#105;&#110;&#103;&#46;&#99;&#111;&#109;.</p>
+	</section>
+	
+	<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<p>
+	<strong>Step 1:&nbsp;</strong>Back up the&nbsp;<em>/admin/model/catalog/product.php</em> file from your Open Cart installation. If you already have a robots.txt file, then backup that one too.</p>
+<p>
+	<strong>Step 2:</strong>&nbsp;After extracting the module archive upload all the contents inside the &lsquo;upload&rsquo; directory to your Open Cart installation. This will only overwrite the <em>/admin/model/catalog/product.php</em> file.</p>
+<p>
+	<strong>Step 3:&nbsp;</strong>Go to <em>Administration &gt; Extensions &gt; Modules</em></p>
+<p>
+	<strong>Step 4:&nbsp;</strong>Install &ldquo;<strong>GoodKoding </strong>- Social Media Share&rdquo; module.</p>
+<p>
+	<strong>Step 5:</strong>&nbsp;If you already have a robots.txt file then add only the second line of module&rsquo;s robots.txt to your existing file.</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="advanced_installation">
+	<div class="page-header"><h3>Advanced Installation</h3><hr class="notop"></div>
+<p>
+	<strong>Please do not go through the following steps if you are not familiar with PHP coding and are not confident to modify the source code.</strong></p>
+<p>
+	If you are already have custom code on your product.php then copy following areas into your file instead of overwriting.</p>
+<p>
+	<strong>Step 1:&nbsp;</strong>Open&nbsp;<em>/admin/model/catalog/product.php</em> file in any text editor (e.g. notepad++).</p>
+<p>
+	<strong>Step 2:&nbsp;</strong>Copy following code segment and paste at the end of <em>addProduct </em>function; right before&nbsp;<em>$this-&gt;cache-&gt;delete(&#39;product&#39;);</em> line.</p>
+<pre class="prettyprint lang-php linenums">
+/** Share to social media **/
+if(!empty($data[&#39;image&#39;])){
+  $param = array(
+    &#39;title&#39; =&gt; $data[&#39;product_description&#39;][1][&#39;name&#39;],
+    &#39;image&#39; =&gt; $data[&#39;image&#39;],
+    &#39;description&#39; =&gt; $data[&#39;product_description&#39;][1][&#39;description&#39;],
+    &#39;link&#39; =&gt; &#39;index.php?route=product/product&amp;product_id=&#39;.$product_id,
+    &#39;product_id&#39; =&gt; $product_id,
+    &#39;post_type&#39; =&gt; &#39;add&#39;
+  );
+  $this-&gt;gk_social_media_share($param);
+}</pre>
+<p>
+	<strong>Step 3:</strong>&nbsp;Copy following code segment and paste at the end of&nbsp;<em>editProduct&nbsp;</em>function; right before&nbsp;<em>$this-&gt;cache-&gt;delete(&#39;product&#39;);</em>&nbsp;line.</p>
+<pre class="prettyprint lang-php linenums">
+/** Share to social media **/
+$image_row = $this-&gt;getProduct($product_id);
+if(!empty($image_row[&#39;image&#39;])){
+  $param = array(
+    &#39;title&#39; =&gt; $data[&#39;product_description&#39;][1][&#39;name&#39;],
+    &#39;image&#39; =&gt; $image_row[&#39;image&#39;],
+    &#39;description&#39; =&gt; $data[&#39;product_description&#39;][1][&#39;description&#39;],
+    &#39;link&#39; =&gt; &#39;index.php?route=product/product&amp;product_id=&#39;.$product_id,
+    &#39;product_id&#39; =&gt; $product_id,
+    &#39;post_type&#39; =&gt; &#39;edit&#39;
+  );
+  $this-&gt;gk_social_media_share($param);
+}</pre>
+<p>
+	<strong>Step 4:</strong>&nbsp;Copy the following <em>gk_social_media_share</em> function and paste right before ending your <em>ModelCatalogProduct</em> class.</p>
+<pre class="prettyprint lang-php linenums">
+/** Share product info to social media **/
+public function gk_social_media_share($params = array()){
+  $this-&gt;load-&gt;model(&#39;setting/setting&#39;); 
+  $gk_social_media_share = $this-&gt;model_setting_setting-&gt;getSetting(&#39;gk_social_media_share&#39;);
+  $social_data = unserialize(base64_decode($gk_social_media_share[&#39;gk_social_media_share&#39;]));      
+
+  if(!isset($social_data[&#39;facebook&#39;]) || !isset($social_data[&#39;facebook&#39;][&#39;share_fb&#39;])) {
+    return;
+  }
+
+  $share_fb_enable = $social_data[&#39;facebook&#39;][&#39;share_fb&#39;];
+
+  if(isset($share_fb_enable) &amp;&amp; $share_fb_enable == 1 ){ 
+    $img = $params[&#39;image&#39;]; 
+    $status = html_entity_decode($params[&#39;description&#39;]); 
+    $status=strip_tags($status);
+    $link=$params[&#39;link&#39;];
+    require_once(DIR_SYSTEM.&#39;library/gk_social_media_share_facebook.php&#39;);
+
+    if(!empty($social_data[&#39;facebook&#39;][&#39;page_id&#39;]) &amp;&amp; !empty($social_data[&#39;facebook&#39;][&#39;page_access_token&#39;])) {<span class="Apple-tab-span" style="white-space:pre"> </span>
+      $args = array(
+        &#39;access_token&#39;  =&gt; $social_data[&#39;facebook&#39;][&#39;page_access_token&#39;],
+        &#39;message&#39;       =&gt; $status,
+        &#39;picture&#39;       =&gt; HTTP_CATALOG.&quot;image/&quot;.$img,
+        &#39;link&#39;          =&gt; HTTP_CATALOG.$link
+      ); 
+      $facebook = new Facebook(array(
+                           &#39;appId&#39;  =&gt; $social_data[&#39;facebook&#39;][&#39;app_id&#39;],
+                           &#39;secret&#39; =&gt; $social_data[&#39;facebook&#39;][&#39;app_secret&#39;],
+                           &#39;allowSignedRequest&#39; =&gt; false
+      ));
+      $page_id = $social_data[&#39;facebook&#39;][&#39;page_id&#39;];
+      $post_id = $facebook-&gt;api(&quot;/$page_id/feed&quot;,&quot;post&quot;,$args);
+
+      if($post_id) {
+        $this-&gt;db-&gt;query(&#39;INSERT INTO `&#39;.DB_PREFIX.&#39;gk_social_media_share` SET `product_id` = &#39;.(int)$params[&#39;product_id&#39;].&#39;, `post_id` = &quot;&#39;.$post_id.&#39;&quot;, `post_date` = NOW(), `post_type` = &quot;&#39;.$params[&#39;post_type&#39;].&#39;&quot;&#39;);
+      }
+    }
+  }
+}</pre>
+<div>
+	&nbsp;</div>
+</section>
+<section id="setting_up_options">
+	<div class="page-header"><h3>Setting up Options</h3><hr class="notop"></div>
+<p>
+	Before start sharing the products you need to set the options for the module. First you need to create a Facebook application of your own to share the products. Visit <a href="https://developers.facebook.com/apps" target="_blank">https://developers.facebook.com/apps</a> to create a Facebook application. If you do not know how to create a Facebook application, please visit this link to know how to create your first Facebook app:&nbsp;<a href="https://developers.facebook.com/docs/opengraph/getting-started/#create-app" target="_blank">https://developers.facebook.com/docs/opengraph/getting-started/#create-app</a>.</p>
+<p>
+	Collect the APP ID and APP Secret of your Facebook application.</p>
+<p>
+	You will also need to be administrator/manager of the Facebook page where you want to post the products.</p>
+<p>
+	To edit the options of your module, go to Go to <strong>Administration &gt; Extensions &gt; Modules</strong>. Click on the &ldquo;Edit&rdquo; link beside &ldquo;<strong>GoodKoding</strong> - Social Media Share&rdquo; module. Then follow these steps:</p>
+<p>
+	<strong>Step 1:&nbsp;</strong>Provide APP ID and APP Secret from your Facebook application and Save.</p>
+<p>
+	<a href="http://imgur.com/g2ClhX6" target="_blank"><img alt="Provide APP ID and Secret" src="assets/images/image_6.png" style="width: 500px; height: 298px; margin: 10px;"></a></p>
+<p>
+	<strong>Step 2:</strong>&nbsp;Click on the &ldquo;Connect to Facebook&rdquo; link to let the module have permission to post on Facebook. Clicking on this link will take you to Facebook.</p>
+<p>
+	<a href="http://imgur.com/n5uSrA1" target="_blank"><img alt="Connect to Facebook" src="assets/images/image_8.png" style="width: 500px; height: 298px; margin: 10px;"></a></p>
+<p>
+	After logging in using your Facebook credentials, there will be three popups. Click Okay on all three of them. See the following images for clarification.</p>
+<p>
+	<a href="http://imgur.com/kikip4C" target="_blank"><img alt="Facebook permission" src="assets/images/image_7.png" style="width: 500px; height: 402px; margin: 10px;"></a></p>
+<p>
+	<a href="http://imgur.com/QKZGbEp" target="_blank"><img alt="Facebook post permission" src="assets/images/image_4.png" style="width: 500px; height: 396px; margin: 10px;"></a></p>
+<p>
+	<a href="http://imgur.com/GPvoTqt" target="_blank"><img alt="Facebook page permission" src="assets/images/image_3.png" style="width: 500px; height: 374px; margin: 10px;"></a></p>
+<p>
+	<strong>Step 3:&nbsp;</strong>You will be redirected back to the administration area. Here you will see the list of pages you administer on Facebook. Click on the page you want to post the products on.</p>
+<p>
+	<a href="http://imgur.com/RqXnL7q" target="_blank"><img alt="Select page" src="assets/images/image_5.png" style="width: 500px; height: 298px; margin: 10px;"></a></p>
+<p>
+	<strong>Step 4:&nbsp;</strong>Check the &ldquo;Share on Facebook&rdquo; checkbox and save the settings.</p>
+<p>
+	<a href="http://imgur.com/DzfSYYZ" target="_blank"><img alt="Share on Facebook" src="assets/images/image_2.png" style="width: 500px; height: 298px; margin: 10px;"></a></p>
+<p>
+	Once all these steps are completed products will be published on Facebook as soon as they are added or edited. Product must have at least one image to be shared on Facebook.</p>
+</section>
+<section id="stop_sharing">
+	<div class="page-header"><h3>Stop Sharing</h3><hr class="notop"></div>
+<p>
+	If you want to stop sharing your product to Facebook, just uncheck the &ldquo;Share on Facebook&rdquo; checkbox from module&rsquo;s settings page.</p>
+<p>
+	You can also click on the &ldquo;Remove Facebook authentication&rdquo; link to remove the publishing permission of the module.</p>
+<p>
+	<a href="http://imgur.com/6ZrrRM5" target="_blank"><img alt="Stop Sharing" src="assets/images/image_1.png" style="width: 500px; height: 298px; margin: 10px;"></a></p>
+</section>
+<section id="uninstall">
+	<div class="page-header"><h3>Uninstall</h3><hr class="notop"></div>
+<p>
+	You can click the &ldquo;Uninstall&rdquo; link beside &ldquo;<strong>GoodKoding </strong>- Social Media Share&rdquo; module on your modules list page to uninstall this module. Uninstalling the module will remove all the module related data from settings.</p>
+</section>
+<section id="faq">
+	<div class="page-header"><h3>FAQ</h3><hr class="notop"></div>
+<h4 id="faq_why_doesn_rsquot_my_product_show_up_on_facebook">Why doesn&rsquo;t my product show up on Facebook?</h4>
+<div>
+	There can be several reasons for that. Please make sure</div>
+<ul>
+	<li>
+		You have set all the options properly</li>
+	<li>
+		The &ldquo;Share on Facebook&rdquo; checkbox is checked</li>
+	<li>
+		At least one page is chosen to impersonate</li>
+	<li>
+		The product you are sharing has an image</li>
+	<li>
+		You haven&rsquo;t removed/blocked the application from your Facebook account (see more about this here: https://www.facebook.com/help/262314300536014/)</li>
+</ul>
+<h4 id="faq_why_do_i_have_to_place_files_inside_system_directory">Why do I have to place files inside system directory?</h4>
+<div>
+	There are two files needed to be saved inside &ldquo;<em>system/library</em>&rdquo; directory. They are Facebook&rsquo;s API libraries which are used to post the product information to Facebook. They do not interact or overwrite any other library or Open Cart feature.</div>
+<h4 id="faq_why_do_i_have_to_place_a_new_php_file_at_the_root_directory">Why do I have to place a new PHP file at the root directory?</h4>
+<div>
+	This file (<em>gk_social_media_share_redirect.php</em>) saves the options for connection between the module and Facebook. We had to place this file at the root of installation because Facebook does not support &ldquo;&amp;&rdquo; in the URL which is required for the admin area. This file is completely safe and is hidden from search engines using <em>robots.txt</em> file.</div>
+<h4 id="faq_does_this_module_save_my_facebook_credentials">Does this module save my Facebook credentials?</h4>
+<div>
+	NO. This module does not save your Facebook credentials or anything that can compromise your Facebook account.</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="support">
+	<div class="page-header"><h3>Support</h3><hr class="notop"></div>
+<p>
+	Having problem with the module? Drop us a line at the module&rsquo;s comment section or send an email to &#105;&#110;&#102;&#111;&#64;&#103;&#111;&#111;&#100;&#107;&#111;&#100;&#105;&#110;&#103;&#46;&#99;&#111;&#109;.</p>
+</section>
+
+	</div>
+</body>
+</html>
